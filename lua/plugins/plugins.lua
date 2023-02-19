@@ -8,4 +8,7 @@ return {
   -- markdown support
   { "godlygeek/tabular" }, -- required by vim-markdown
   { "plasticboy/vim-markdown" },
+
+  -- add jsonls and schemastore ans setup treesitter for json, json5 and jsonc
+  { import = "lazyvim.plugins.extras.lang.json" },
 }
