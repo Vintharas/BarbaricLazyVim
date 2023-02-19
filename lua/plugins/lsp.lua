@@ -1,6 +1,10 @@
 -- lsp configs
 return {
 
+  -- for typescript, LazyVim also includes extra specs to properly setup lspconfig,
+  -- treesitter, mason and typescript.nvim. So instead of the above, you can use:
+  { import = "lazyvim.plugins.extras.lang.typescript" },
+
   -- customize lsp configs
   {
     "neovim/nvim-lspconfig",
