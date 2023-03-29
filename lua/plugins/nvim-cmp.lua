@@ -13,6 +13,7 @@ return {
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
+      -- Adds cmp-emoji
       "hrsh7th/cmp-emoji",
     },
     ---@param opts cmp.ConfigSchema
@@ -26,6 +27,10 @@ return {
       local luasnip = require("luasnip")
       local cmp = require("cmp")
 
+      -- Add emoji to cmp sources
+      opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" } }))
+
+      -- Configure <TAB> like in VSCode
       -- This is reaaaally not easy to setup :D
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<Tab>"] = cmp.mapping(function(fallback)
