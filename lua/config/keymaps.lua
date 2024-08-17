@@ -26,6 +26,12 @@ vim.keymap.set("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>")
 vim.keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>")
 vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>")
 
+-- Hover
+vim.keymap.set("n", "gh", function()
+  -- :h hover
+  vim.lsp.buf.hover()
+end)
+
 -- UI
 vim.keymap.set("n", "<leader>uF", function()
   vim.o.foldenable = not vim.o.foldenable
