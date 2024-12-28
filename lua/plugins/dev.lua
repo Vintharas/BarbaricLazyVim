@@ -23,4 +23,11 @@ return {
     lazy = false,
     opts = {},
   },
+  {
+    name = "vintharas/roguelike.nvim",
+    dir = "~/GitHub/roguelike.nvim",
+    dev = true,
+    lazy = false,
+    opts = {},
+  },
 }
