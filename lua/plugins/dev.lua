@@ -12,6 +12,7 @@ return {
     dir = "~/GitHub/llm.nvim",
     dev = true,
     lazy = false,
+    enabled = false,
     opts = {
       -- debug_level = "DEBUG",
     },
@@ -20,6 +21,7 @@ return {
     name = "vintharas/goog-terms.nvim",
     dir = "~/GitHub/goog-terms.nvim",
     dev = true,
+    enabled = false,
     lazy = false,
     opts = {},
   },
@@ -27,6 +29,7 @@ return {
     name = "vintharas/roguelike.nvim",
     dir = "~/GitHub/roguelike.nvim",
     dev = true,
+    enabled = false,
     lazy = false,
     opts = {},
   },
